@@ -7,7 +7,7 @@ import sys
 import dpkt
  
  
-SLL2_LINKTYPE = 276
+SLL2_LINKTYPE = 276 # Output of `tcpdump -i any`
 SLL2_HEADER_LEN = 20
 FAKE_MAC = b"\x00\x00\x00\x00\x00\x00"
 
