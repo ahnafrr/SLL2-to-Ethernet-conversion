@@ -7,8 +7,8 @@ import sys
 import dpkt
  
  
-SLL2_LINKTYPE = 276 # Output of `tcpdump -i any`
-SLL2_HEADER_LEN = 20
+SLL2_LINKTYPE = 276 # If file encapsulation is Linux cooked-mode capture v2, use this (276). But if file encapsulation is Linux cooked-mode capture v1, use 113.
+SLL2_HEADER_LEN = 20 # If file encapsulation is Linux cooked-mode capture v2, use this (20). But if file encapsulation is Linux cooked-mode capture v1, use 16.
 FAKE_MAC = b"\x00\x00\x00\x00\x00\x00"
 
 def main(src, dst):
